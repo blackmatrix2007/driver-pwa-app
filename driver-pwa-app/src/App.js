@@ -177,37 +177,7 @@ const mockApiCall = async (api, params) => {
   }
 };
 
-// Mock API functions for demo
-const mockLogin = async (userName, password) => {
-  // Simulate API delay
-  await new Promise(resolve => setTimeout(resolve, 1000));
-  
-  if (userName === 'laixe1' && password === '123456') {
-    return {
-      data: [{
-        UserID: 100006,
-        UserName: userName,
-        type: 3,
-        idLaiXe: 100002,
-        typeText: 'Lái xe'
-      }],
-      error: false
-    };
-  } else if (userName === 'dieuvien1' && password === '123456') {
-    return {
-      data: [{
-        UserID: 100001,
-        UserName: userName,
-        type: 2,
-        idLaiXe: 100001,
-        typeText: 'Điều vận'
-      }],
-      error: false
-    };
-  }
-  
-  return { error: true, message: 'Sai tên đăng nhập hoặc mật khẩu' };
-};
+
 
 const mockGetShipments = async () => {
   await new Promise(resolve => setTimeout(resolve, 500));

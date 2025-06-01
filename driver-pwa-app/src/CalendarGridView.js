@@ -462,16 +462,18 @@ const CalendarHomeScreen = ({ userData, onViewChange, onSelectShipment }) => {
   };
 
   if (selectedView === "grid") {
-    return (
-      <CalendarGridView
-        userData={userData}
-        onSelectShipment={onSelectShipment}
-      />
-    );
+    // return (
+    //   <CalendarGridView
+    //     userData={userData}
+    //     onSelectShipment={onSelectShipment}
+    //   />
+    // );
+    return null;
   }
 
   if (selectedView === "monthly") {
-    return <CalendarScreen userData={userData} shipments={[]} />;
+    //return <CalendarScreen userData={userData} shipments={[]} />;
+    return null;
   }
 
     if (selectedView === "custom") {

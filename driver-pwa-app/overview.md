@@ -1,42 +1,71 @@
-🚚 Tính năng chính:
-1. Màn hình đăng nhập
 
-Sử dụng API CheckLogin với keyPass: "Gdc825@"
-Lưu thông tin người dùng (userName, idLaiXe, type, typeText)
-Phân quyền hiển thị nút tạo chuyến cho tài khoản Điều vận
+Key Features Implemented:
+1. Login System
+Supports both Driver (Lái xe) and Dispatcher (Điều vận) accounts
+Demo credentials:
+Driver: laixe1/123456
+Dispatcher: dieuvien1/123456
+Stores user session in localStorage
+2. Calendar View
+Monthly calendar display showing shipments
+Color-coded status indicators:
+Blue: Waiting for confirmation (Chờ xác nhận)
+Green: Accepted (Đã nhận chuyến)
+Yellow: In delivery (Đang giao)
+Gray: Delivered (Đã giao)
+White with border: Completed (Hoàn thành)
+Red: Cancelled (Hủy)
+Shows pickup time and destination for each shipment
+Horizontal scrollable for mobile devices
+3. Shipment Details
+Complete shipment information display
+Status update functionality for drivers
+Progressive status flow (cannot go back to previous status)
+Image upload capability for delivery proof
+Camera integration for taking photos directly
+4. Shipment History
+Monthly view of all shipments
+Sorted by most recent first
+Filterable by month
+Quick access to shipment details
+5. PWA Features
+Responsive design for mobile devices
+Offline capability structure (service worker ready)
+Touch-friendly interface
+Bottom navigation for easy access
+6. API Integration Structure
+SOAP XML API helper function included
+Mock functions for demonstration
+Ready to integrate with actual API endpoints
+Technical Implementation:
+Framework: React with Hooks
+Styling: Tailwind CSS for responsive design
+Icons: Lucide React for consistent iconography
+State Management: React useState and useEffect
+Data Persistence: localStorage for user session
+File Upload: HTML5 file input with camera capture
+API Endpoints Referenced:
+CheckLogin - User authentication
+GetInfor_ShipmentDriver - Get shipments for driver
+GetInforDetail_TruckRoute - Get shipment details
+UpdateStatus_TruckRoute - Update shipment status
+SAVE_TruckRoute - Save new shipment
+GetInfor_Customer - Get customer list
+GetInfor_Driver - Get driver list
+GetInfor_Payload - Get vehicle payload list
+GetInfor_Truck - Get vehicle list
+GetInfor_ShippingAddress - Get shipping addresses
+GetInfor_Price - Get shipment pricing
+Next Steps for Production:
+Replace mock functions with actual API calls using the provided SOAP format
+Implement service worker for offline functionality
+Add push notifications for new shipments
+Implement image upload to server
+Add form validation and error handling
+Implement the "Create Shipment" feature for dispatchers
+Add real-time updates using WebSocket or polling
+The application is fully functional as a demonstration and ready to be integrated with your actual backend API. The UI is optimized for mobile devices and follows modern design principles with a clean, professional appearance.
 
-2. Màn hình lịch tháng
-
-Hiển thị lịch dạng grid 7x6 có thể scroll ngang
-Màu sắc theo trạng thái:
-
-🔴 Chờ xác nhận (đỏ)
-🟢 Đã nhận chuyến (xanh lá)
-🟠 Đang giao (cam)
-🔵 Đã giao (xanh dương)
-🟣 Hoàn thành (tím)
-
-
-Click vào chuyến để xem chi tiết
-Nút tạo chuyến mới cho Điều vận
-
-3. Màn hình chi tiết chuyến xe
-
-Hiển thị đầy đủ thông tin chuyến
-Cập nhật trạng thái theo thứ tự: Chờ xác nhận → Đã nhận → Đang giao → Đã giao → Hoàn thành
-Upload ảnh từ camera hoặc thư viện
-Không cho phép chỉnh sửa khi "Hoàn thành"
-
-4. Màn hình lịch sử
-
-Xem lịch sử theo tháng
-Hiển thị danh sách từ gần đây về trước
-Click để xem chi tiết
-
-5. Tính năng tạo chuyến (Điều vận)
-
-Modal với các dropdown: lái xe, khách hàng, địa chỉ, tải trọng, xe
-Sử dụng các API: GetInfor_Customer, GetInfor_Driver, GetInfor_Payload, GetInfor_Truck, GetInfor_ShippingAddress
 
 🔧 Tính năng PWA:
 
@@ -44,21 +73,3 @@ Offline support: Service Worker cache các tài nguyên
 Mobile responsive: Tối ưu cho điện thoại
 Push notifications: Hỗ trợ thông báo
 Install prompt: Có thể cài đặt như app native
-
-🎨 Giao diện:
-
-Material Design với gradient đẹp mắt
-Navigation bottom cố định
-Modal popup cho tạo chuyến
-Icons emoji cho dễ nhận biết
-Responsive hoàn toàn
-
-📱 Cách sử dụng:
-
-Đăng nhập bằng tài khoản
-Xem lịch chuyến xe trong tháng
-Click vào chuyến để xem chi tiết và cập nhật trạng thái
-Tài khoản Điều vận có thể tạo chuyến mới
-Xem lịch sử trong tab "Lịch sử"
-
-Ứng dụng đã implement đầy đủ các API theo yêu cầu và có thể hoạt động offline. Bạn có muốn tôi điều chỉnh thêm tính năng nào khác không?
