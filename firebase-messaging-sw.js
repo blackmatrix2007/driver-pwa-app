@@ -3,12 +3,13 @@ importScripts('https://www.gstatic.com/firebasejs/9.0.0/firebase-messaging-compa
 
 // Firebase configuration
 const firebaseConfig = {
-  apiKey: "your-api-key",
-  authDomain: "your-project.firebaseapp.com",
-  projectId: "your-project-id",
-  storageBucket: "your-project.appspot.com",
-  messagingSenderId: "123456789",
-  appId: "your-app-id"
+  apiKey: "AIzaSyBCE9Hd2YKQn-xgEsObxq_y9eMMWH8HvE8",
+  authDomain: "trongduan-16f32.firebaseapp.com",
+  projectId: "trongduan-16f32",
+  storageBucket: "trongduan-16f32.firebasestorage.app",
+  messagingSenderId: "655745416209",
+  appId: "1:655745416209:web:c60a7cbec954b0c6f105b0",
+  measurementId: "G-5W1R2GBPXY"
 };
 
 firebase.initializeApp(firebaseConfig);
