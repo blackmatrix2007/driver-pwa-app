@@ -1,6 +1,6 @@
 {
   "short_name": "Trong Duan Driver",
-  "name": "Trong Duan",
+  "name": "Trong Duan - Ứng dụng quản lý vận chuyển",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,35 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#2563eb",
+  "background_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "categories": ["business", "productivity"],
+  "lang": "vi",
+  "dir": "ltr",
+  "scope": "/",
+  "prefer_related_applications": false,
+  "shortcuts": [
+    {
+      "name": "Lịch làm việc",
+      "short_name": "Lịch",
+      "description": "Xem lịch làm việc hàng tuần",
+      "url": "/?shortcut=calendar",
+      "icons": [{ "src": "logo192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Báo cáo",
+      "short_name": "Báo cáo", 
+      "description": "Xem báo cáo chuyến xe",
+      "url": "/?shortcut=report",
+      "icons": [{ "src": "logo192.png", "sizes": "192x192" }]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot1.png",
+      "type": "image/png",
+      "sizes": "540x720"
+    }
+  ]
 }
