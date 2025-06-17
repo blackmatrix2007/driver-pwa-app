@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/driver-pwa-app/static/css/main.e6c13ad2.css",
-    "main.js": "/driver-pwa-app/static/js/main.a3fb46f3.js",
+    "main.js": "/driver-pwa-app/static/js/main.66d89322.js",
     "static/js/453.37c5bd53.chunk.js": "/driver-pwa-app/static/js/453.37c5bd53.chunk.js",
     "index.html": "/driver-pwa-app/index.html",
     "main.e6c13ad2.css.map": "/driver-pwa-app/static/css/main.e6c13ad2.css.map",
-    "main.a3fb46f3.js.map": "/driver-pwa-app/static/js/main.a3fb46f3.js.map",
+    "main.66d89322.js.map": "/driver-pwa-app/static/js/main.66d89322.js.map",
     "453.37c5bd53.chunk.js.map": "/driver-pwa-app/static/js/453.37c5bd53.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.a3fb46f3.js"
+    "static/js/main.66d89322.js"
   ]
 }
